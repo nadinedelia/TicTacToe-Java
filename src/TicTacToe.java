@@ -16,11 +16,10 @@ public class TicTacToe {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter your placement (1-9):");
-		int pos = scan.nextInt();
+		int playerPos = scan.nextInt();
 		
-		System.out.println(pos);
 		
-		placePiece(gameBoard, pos, "player");
+		placePiece(gameBoard, playerPos, "player");
 		
 		Random rand = new Random();
 		int cpuPos = rand.nextInt(9) + 1;
